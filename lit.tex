@@ -1,0 +1,138 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+{\LARGE
+\textbf{1. Chung,Garey,Tarjan(Strongly connected orientations of mixed multigraph)} \\
+\vspace{1cm} \\
+\textbf{connectivity:}in an undirected graph is that every vertex can reach every other vertex via any path.\\
+strong connectivity applies only to directed graphs.\\
+\textbf{strongly connected - } directed graph, if there is path b/w every pair of vertices.\\
+\textbf{Orientation:} assigning directions to edges in the undirected graph. \\
+\textbf{multigraph:} graph with parallel edges or loops \\
+\textbf{mixed  graph:} some edges might be directed and undirected.\\
+\vspace{2cm}\\
+\\\textbf{Robbin's work:} 1.Orienting all the undirected edges of a mixed multigraph(partially oriented with loops or parallel edges in graph) preserving reachability or strong connectivity.(undirected graph is orientable iff it is strongly connected and has no bridges.)\\
+2. proof yields a linear-time algorithm for constructing a strongly connected orientation. his algorithm carry out:\\
+a) DFS \\
+b)orient every edge in the direction along which the search advances.\\
+\
+\vspace{1cm}\\
+\textbf{Boesch and Tindell:} 
+claimed that DFS can be used to find an appropriate orientation but provides no details.\\
+\vspace{1cm}\\
+\vspace{1cm} \\
+ \textbf{Note:}Results of above papers say nothing about how much distances between the vertices can increase in the process of orienting edges while preserving strong connectivity. \\
+ \vspace{1cm} \\
+\textbf{Chvatal and Thomassen:} addresses above note in only undirected graph.\\
+ The oriented diameter of an (undirected) graph G is the smallest diameter among strong orientations of G. and is between $5d^{2}+5d$ and $2d^{2}+2d$ or atmost $r^{2}+r$ \\
+ 
+\vspace{1cm}
+  \textbf{This paper work:} linear time algorithm of robbin's algo. and also improved chvatal and Thomassen' algo to atmost
+   $4r^{2}+4r$ \\
+\textbf{Note:} these algos
+gives poly-time solvable. \\
+   
+\vspace{2cm} 
+\textbf{Notations used:}\\
+undirected edges - $\lbrace\rbrace$ \\
+directed edges - []\\
+either directed or undirected -()\\
+\newpage
+\textbf{2.Chavatal and Thomassen (Distances in Orientations of Graphs)} \\
+\vspace{1 cm} \\
+\textbf{This paper work:} (algo only for undirected graph)
+1. For every undirected, if an edge uv belongs to a cycle of length k in G, then uv or vu belongs to a directed cycle of length of 
+atmost h(k) in H . H -> orientation in graph G. h(k) -> function in graph G. k -> length of a cycle in G. \\
+2. the undirected graph with no bidges with radius r admits an orientation of radius at most $r^{2}+r$. \\
+3. replaced with diameter and found that it belongs to class of problems of NP-hard.\\
+lower bound $ \rightarrow \frac{1}{2}d^{2}+d$ \\
+upper bound $ \rightarrow 2d^{2}+2d$\\
+
+\newpage
+\textbf{3. Jasine,Deepu,Deepak,Sai(AN improvement to chvatal and Thomassen upper bound for oriented diameter)} \\
+\vspace{2cm} \\
+\textbf{oriented diameter:} smallest diameter of all orientation of G. \\
+\vspace{1 cm} \\
+\textbf{This paper work:}
+1.Improved upper bound of chvatal's to $1.373d^{2}+6.97d -1$ performs better than former bound for n>8.  \\
+\textbf{Note:} Their lower bounds still reminds unimproved.\\
+2. for d =4, f(4)$\leq$ 21, reduced from 40 of former algo.\\
+\vspace{1cm }\\
+\textbf{Notations used:}\\
+G $\rightarrow$ Graph (either partially oriented or undirected)
+$\overrightarrow{G}  \rightarrow$  directed graph \\
+$d_{G}\lbrace u,v \rbrace \rightarrow$ distance b/w 2 vertices(no. of edges b/w the path u and v) \\
+$\overrightarrow{d}(G) \rightarrow $ oriented diameter of an undirected graph \\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document} 
