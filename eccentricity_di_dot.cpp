@@ -57,7 +57,7 @@ int main()
 
    
     ifstream indata("input_di.gv");
-    ofstream outdata("output.gv");
+    ofstream outdata("output_di.gv");
     if (read_graphviz(indata, g_in, dp)) 
     {
     property_map<Graph, edge_weight_t>::type weight_pmap = get(edge_weight, g_in);
