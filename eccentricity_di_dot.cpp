@@ -56,7 +56,7 @@ int main()
     dp.property("weight",  get(edge_weight, g_in));
 
    
-    ifstream indata("input.gv");
+    ifstream indata("input_di.gv");
     ofstream outdata("output.gv");
     if (read_graphviz(indata, g_in, dp)) 
     {
